@@ -28,10 +28,12 @@
   }
   .image-card {
     position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
   }
   .image-card__picture > img {
     width:100%;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.13);
   }
   .image-card__comment {
     position: absolute;
@@ -39,7 +41,8 @@
     height: 52px;
     padding: 16px;
     text-align: right;
-    background: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    border-radius: 0 0 10px 10px;
   }
   .image-card__comment > span {
     color: #fff;

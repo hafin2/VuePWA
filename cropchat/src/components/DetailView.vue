@@ -34,6 +34,8 @@ export default {
   .picture > img {
     color: #fff;
     width:100%;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.13);
   }
   .info {
     text-align: right;
