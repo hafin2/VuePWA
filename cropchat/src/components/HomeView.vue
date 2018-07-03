@@ -43,7 +43,7 @@
     height: 52px;
     padding: 16px;
     text-align: right;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
     border-radius: 0 0 10px 10px;
   }
   .image-card__comment > span {
