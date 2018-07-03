@@ -1,20 +1,32 @@
+
 {
-  "name": "vuepwa",
-  "short_name": "vuepwa",
+  "name": "cropchat",
+  "short_name": "cropchat",
   "icons": [
     {
-      "src": "/static/img/icons/android-chrome-192x192.png",
+      "src": "/static/img/icons/apple-touch-icon-76x76.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/static/img/icons/android-chrome-512x512.png",
+      "src": "/static/img/icons/apple-touch-icon-120x120.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/img/icons/apple-touch-icon-152x152.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/img/icons/apple-touch-icon-180x180.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#4DBA87"
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#2196f3"
 }

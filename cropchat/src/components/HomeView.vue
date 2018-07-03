@@ -9,6 +9,7 @@
           </div>
           <div class="image-card__comment mdl-card__actions">
             <span>{{ picture.comment }}</span>
+            <span><p style="font-size:8px; margin: -5px 0px 0px; opacity: 0.8;">{{ picture.author}}</p></span>
           </div>
         </div>
       </div>
@@ -33,7 +34,8 @@
   .image-card__picture > img {
     width:100%;
     border-radius: 10px;
-    box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.13);
+    /* box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.13); */
+        box-shadow: 0 20px 64px 0 rgba(0,0,0,.2);
   }
   .image-card__comment {
     position: absolute;
