@@ -1,6 +1,6 @@
 <template>
   <div class="waiting">
-    Not yet available
+    Not yet available - Need to create view (Upload or take picture)
   </div>
 </template>
 <script>

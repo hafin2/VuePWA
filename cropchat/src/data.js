@@ -5,7 +5,7 @@ export default {
       'url': 'https://images.unsplash.com/photo-1530489041714-72f7a9e37eb6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7621ab1dab934d901c2aa6c20c0cf17c&auto=format&fit=crop&w=500&q=60',
       'comment': 'Rose',
       'info': 'Posted by Kevin on Friday',
-      'author': 'Hasse Finderup',
+      'author': 'Jacob Rathsach',
       'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {
@@ -29,7 +29,7 @@ export default {
       'url': 'https://images.unsplash.com/photo-1530480667809-b655d4dc3aaa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d95de6418decb6042f2ab13f114f7ac0&auto=format&fit=crop&w=500&q=60',
       'comment': 'Lake',
       'info': 'Posted by Richard on Monday',
-      'author': 'Hasse Finderup',
+      'author': 'Jacob Rathsach',
       'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     },
     {

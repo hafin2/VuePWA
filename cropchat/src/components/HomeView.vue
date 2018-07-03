@@ -8,15 +8,15 @@
             <img :src="picture.url" />
           </div>
           <div class="image-card__comment mdl-card__actions">
-            <span>{{ picture.comment }}</span>
-            <span><p style="font-size:8px; margin: -5px 0px 0px; opacity: 0.8;">{{ picture.author}}</p></span>
+            <span style="opacity: 0.8">{{ picture.author }}</span>
           </div>
         </div>
       </div>
     </div>
-    <router-link class="add-picture-button mdl-button mdl-js-button mdl-button--fab mdl-button--colored" to="/post">
+    <!-- SKAL VÆRE ET MENU PUNKT -->
+    <!-- <router-link class="add-picture-button mdl-button mdl-js-button mdl-button--fab mdl-button--colored" to="/post">
       <i class="material-icons">add</i>
-    </router-link>
+    </router-link> -->
   </div>
 </template>
 ...
