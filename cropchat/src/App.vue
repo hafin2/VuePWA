@@ -3,8 +3,10 @@
 </script>
 <style>
   @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+  /* Måske drop google css */
   @import url('https://code.getmdl.io/1.2.1/material.blue-red.min.css');
   @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css');
 </style>
 
 <template>
@@ -24,14 +26,17 @@
   
 
     <div class="page-content">
-      <router-view></router-view>
+      <transition name="router-anim" duration="200"  enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+        <!-- mode="out-in" gør at appen ikke husker placeringen hvis man har scrollet ned  -->
+        <router-view></router-view>
+      </transition>
     </div>
 
-    <nav class="nav menu">
+    <!-- <nav class="nav menu">
       <router-link class="create post" to="/post">
       <i class="fas fa-plus"></i>
     </router-link>
-    </nav>
+    </nav> -->
    
   </div>
 </template>
@@ -47,3 +52,11 @@ export default {
   }
 }
 </script>
+<style>
+.page-anim {
+  position: absolute;
+  width: inherit;
+}
+  
+
+</style>

@@ -1,5 +1,14 @@
 <template>
-  <div class="mdl-grid">
+  <div class="mdl-grid page-anim">
+ <div class="actions">
+          <a href="javascript:history.go(-1)">
+            <img src="../../static/img/icons/left-arrow.png" style="width: 25px; margin-left: 8px;" alt="back arrow">
+          </a>
+      </div>
+
+            <!-- <i class="fas fa-angle-left" style="font-size: 25px; margin-left: 8px; color: #555"></i> -->
+            <!-- <i class="fas fa-long-arrow-alt-left"></i> -->
+
     <div class="mdl-cell mdl-cell--8-col">
       <div class="picture">
         <img :src="this.pictures[$route.params.id].url" />
@@ -14,12 +23,6 @@
       </div>
       <div class="description">
         <span>{{ this.pictures[$route.params.id].description }}</span>
-      </div>
-      
-      <div class="actions">
-        <!-- <router-link class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" to="/post">
-          ANSWER
-        </router-link> -->
       </div>
 
     </div>
