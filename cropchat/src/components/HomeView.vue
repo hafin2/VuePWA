@@ -13,13 +13,12 @@
         </div>
       </div>
     </div>
-    <!-- SKAL VÆRE ET MENU PUNKT -->
-    <!-- <router-link class="add-picture-button mdl-button mdl-js-button mdl-button--fab mdl-button--colored" to="/post">
-      <i class="material-icons">add</i>
-    </router-link> -->
+
   </div>
 </template>
-...
+
+
+
 <style scoped>
   .add-picture-button {
     position: fixed;

@@ -1,6 +1,7 @@
 <script>
   require('material-design-lite')
 </script>
+
 <style>
   @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
   /* Måske drop google css */
@@ -26,8 +27,8 @@
   
 
     <div class="page-content">
+          <!-- mode="out-in" gør at appen ikke husker placeringen hvis man har scrollet ned  -->
       <transition name="router-anim" duration="200"  enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
-        <!-- mode="out-in" gør at appen ikke husker placeringen hvis man har scrollet ned  -->
         <router-view></router-view>
       </transition>
     </div>
@@ -37,7 +38,6 @@
       <i class="fas fa-plus"></i>
     </router-link>
     </nav> -->
-   
   </div>
 </template>
 
@@ -57,6 +57,4 @@ export default {
   position: absolute;
   width: inherit;
 }
-  
-
 </style>

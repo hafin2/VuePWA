@@ -28,6 +28,8 @@
     </div>
   </div>
 </template>
+
+
 <script>
 import data from '../data'
 export default {
@@ -38,6 +40,9 @@ export default {
   }
 }
 </script>
+
+
+
 <style scoped>
   .picture > img {
     color: #fff;
