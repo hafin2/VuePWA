@@ -28,9 +28,9 @@
 
     <div class="page-content">
           <!-- mode="out-in" gør at appen ikke husker placeringen hvis man har scrollet ned  -->
-      <transition name="router-anim" duration="200"  enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+      <!-- <transition name="router-anim" duration="200"  enter-active-class="animated fadeIn" leave-active-class="animated fadeOut"> -->
         <router-view></router-view>
-      </transition>
+      <!-- </transition> -->
     </div>
 
     <!-- <nav class="nav menu">
@@ -38,18 +38,31 @@
       <i class="fas fa-plus"></i>
     </router-link>
     </nav> -->
+
+	<nav>
+		 <ul>
+        <li><a href="#">Home</a></li>
+		 	  <li><a href="#">Search</a></li>
+		 	  <li><a href="#">Upload</a></li>
+		 	  <li><a href="#">Profile</a></li>
+		 </ul>
+	</nav>
+
+
+
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  methods: {
-    hideMenu: function () {
-      document.getElementsByClassName('mdl-layout__drawer')[0].classList.remove('is-visible')
-      document.getElementsByClassName('mdl-layout__obfuscator')[0].classList.remove('is-visible')
-    }
-  }
+  name: 'app'
+  // methods: {
+  //   hideMenu: function () {
+  //     document.getElementsByClassName('mdl-layout__drawer')[0].classList.remove('is-visible')
+  //     document.getElementsByClassName('mdl-layout__obfuscator')[0].classList.remove('is-visible')
+  //   }
+  // }
 }
 </script>
 <style>
@@ -57,4 +70,23 @@ export default {
   position: absolute;
   width: inherit;
 }
+
+nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: #fff;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	color: #757575;
+	text-transform: uppercase;
+}
+
 </style>

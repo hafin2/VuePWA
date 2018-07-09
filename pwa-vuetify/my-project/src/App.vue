@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+ <v-app>
     <v-navigation-drawer
       persistent
       :mini-variant="miniVariant"
@@ -89,3 +89,4 @@ export default {
   name: 'App'
 }
 </script>
+
