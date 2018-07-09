@@ -39,15 +39,35 @@
     </router-link>
     </nav> -->
 
+
 	<nav>
 		 <ul>
-        <li><a href="#">Home</a></li>
-		 	  <li><a href="#">Search</a></li>
-		 	  <li><a href="#">Upload</a></li>
-		 	  <li><a href="#">Profile</a></li>
+        <router-link class="home" to="/">
+          <i class="material-icons">
+          home
+          </i>
+
+        </router-link>
+        <router-link class="post" to="/post">
+          <i class="material-icons">
+          add
+          </i>
+
+        </router-link>
+        <router-link class="search" to="/post">
+          <i class="material-icons">
+          search
+          </i>
+
+        </router-link>
+        <router-link class="profile" to="/post">
+          <i class="material-icons">
+          perm_identity
+          </i>
+
+        </router-link>
 		 </ul>
 	</nav>
-
 
 
 
@@ -71,22 +91,27 @@ export default {
   width: inherit;
 }
 
+
 nav {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	height: 70px;
-	background: #fff;
+  background: #fff;
+
 }
 
 nav li {
-	display: inline-block;
-	padding: 24px 10px;
+	/* display: inline-block; */
+	/* padding: 24px 10px; */
 }
 
-nav li a {
-	color: #757575;
-	text-transform: uppercase;
+nav ul a {
+  color: #000;
+}
+
+ul {
+  -webkit-backdrop-filter: blur(10px);
 }
 
 </style>

@@ -2,7 +2,10 @@
   <div class="mdl-grid page-anim">
  <div class="actions">
           <a href="javascript:history.go(-1)">
-            <img src="../../static/img/icons/left-arrow.png" style="width: 25px; margin-left: 8px;" alt="back arrow">
+            <!-- <img src="../../static/img/icons/left-arrow.png" style="width: 25px; margin-left: 8px;" alt="back arrow"> -->
+              <i class="material-icons">
+              keyboard_arrow_left
+              </i>
           </a>
       </div>
 
