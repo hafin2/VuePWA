@@ -57,15 +57,16 @@ export default {
   .info {
     text-align: right;
     padding: 5px;
-    color: #555;
+    color: #fff;
     font-size: 10px;
   }
   .comment {
     padding: 0px;
-    color: #555;
+    color: #fff;
   }
   .comment h3 {
     margin: 0px 0px 15px 0px;
+    color: #fff;
   }
   .actions {
     text-align: center;
@@ -73,5 +74,11 @@ export default {
   .description {
     font-size: 13px;
     opacity: 0.8;
+    color: #fff;
+  }
+
+  .mdl-grid {
+    /* margin-bottom: 55px; */
+    margin-top: 30px;
   }
 </style>

@@ -24,7 +24,6 @@
         <router-link class="mdl-navigation__link" to="/post" @click.native="hideMenu">Post a picture</router-link>
       </nav>
     </div> -->
-  
 
     <div class="page-content">
           <!-- mode="out-in" gør at appen ikke husker placeringen hvis man har scrollet ned  -->
@@ -33,41 +32,48 @@
       <!-- </transition> -->
     </div>
 
-    <!-- <nav class="nav menu">
-      <router-link class="create post" to="/post">
-      <i class="fas fa-plus"></i>
-    </router-link>
-    </nav> -->
-
-
-	<nav>
-		 <ul>
+	<nav class="bottomNav">
+    <ul>
+      <li>
         <router-link class="home" to="/">
           <i class="material-icons">
           home
           </i>
-
         </router-link>
-        <router-link class="post" to="/post">
+      </li>
+      <li>
+        <label for="file-upload" class="custom-file-upload">
+          <i class="material-icons">
+            add
+          </i>
+        </label>
+        <input style="display: none" id="file-upload" type="file" accept="image/*">
+        <!-- <router-link class="post" to="/post">
           <i class="material-icons">
           add
           </i>
-
-        </router-link>
-        <router-link class="search" to="/post">
+        </router-link> -->
+      </li>
+      <li>
+        <router-link class="search" to="/search">
           <i class="material-icons">
           search
           </i>
-
         </router-link>
-        <router-link class="profile" to="/post">
+      </li>
+      <li>
+        <router-link class="profile" to="/profile">
           <i class="material-icons">
           perm_identity
           </i>
-
         </router-link>
-		 </ul>
+      </li>
+    </ul>
 	</nav>
+
+
+
+  
 
 
 
@@ -91,27 +97,71 @@ export default {
   width: inherit;
 }
 
+body {
+  background: #2d2d2d;
+}
 
 nav {
 	position: fixed;
-	bottom: 0;
+  text-align: center;
 	width: 100%;
-	height: 70px;
-  background: #fff;
+  -webkit-backdrop-filter: blur(10px) saturate(2);
+  /* background-color: rgba(223, 223, 223, 0.87); */
+  background-color: rgba(63, 63, 63, 0.87);
 
 }
+
+.bottomNav {
+  bottom: 0;
+  height: 70px;
+}
+
+.topNav {
+  top: 0;
+  height: 95px;
+  z-index: 99;
+}
+
+
 
 nav li {
-	/* display: inline-block; */
-	/* padding: 24px 10px; */
-}
-
-nav ul a {
-  color: #000;
+	display: inline-block;
+  /* margin-left: 50px; */
+  
 }
 
 ul {
-  -webkit-backdrop-filter: blur(10px);
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-around;
 }
+
+.material-icons {
+  color: #c5c5c5 !important;
+}
+
+
+searchBox {
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchTop {
+  margin-top: 45px;
+  margin-left: 8px;
+  margin-right: 8px;
+  height: 30px;
+  width: 88%;
+  background-color: rgba(189,189,189, 0.87);
+  color: #bdbdbd;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1em;
+  /* box-shadow: 0 20px 64px 0 rgba(0,0,0,.2); */
+  
+}
+
+
 
 </style>

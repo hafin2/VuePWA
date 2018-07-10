@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import Hello from '@/components/Hello'
 import DetailView from '@/components/DetailView'
 import PostView from '@/components/PostView'
 import HomeView from '@/components/HomeView'
+import SearchView from '@/components/SearchView'
+import ProfileView from '@/components/ProfileView'
 
 Vue.use(Router)
 
@@ -23,6 +24,16 @@ export default new Router({
       path: '/post',
       name: 'post',
       component: PostView
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: SearchView
+    },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: ProfileView
     }
   ]
 })

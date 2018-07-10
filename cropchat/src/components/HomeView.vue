@@ -20,12 +20,15 @@
 
 
 <style scoped>
-  .add-picture-button {
-    position: fixed;
-    right: 24px;
-    bottom: 24px;
-    z-index: 998;
+  .mdl-grid {
+    /* margin-bottom: 55px; */
+    margin-top: 30px;
   }
+
+  .image-card:last-child {
+    margin-bottom: 75px;
+  }
+
   .image-card {
     position: relative;
     margin-bottom: 20px;
@@ -50,6 +53,7 @@
     font-size: 14px;
     font-weight: bold;
   }
+
 </style>
 
 <script>
