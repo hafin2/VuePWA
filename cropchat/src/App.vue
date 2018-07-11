@@ -8,6 +8,7 @@
   @import url('https://code.getmdl.io/1.2.1/material.blue-red.min.css');
   @import url('https://use.fontawesome.com/releases/v5.1.0/css/all.css');
   @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css');
+  
 </style>
 
 <template>
@@ -112,7 +113,9 @@ nav {
 }
 
 .bottomNav {
-  bottom: 0;
+  bottom:0; 
+  left:0;
+  right:0;
   height: 70px;
 }
 

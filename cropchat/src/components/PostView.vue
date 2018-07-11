@@ -28,5 +28,8 @@ export default {
 </script>
 
 <style scoped>
-
+.mdl-grid {
+    /* margin-bottom: 55px; */
+    margin-top: 30px;
+  }
 </style>

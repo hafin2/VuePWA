@@ -4,7 +4,7 @@
           <a href="javascript:history.go(-1)">
             <!-- <img src="../../static/img/icons/left-arrow.png" style="width: 25px; margin-left: 8px;" alt="back arrow"> -->
               <i class="material-icons">
-              keyboard_arrow_left
+              keyboard_backspace
               </i>
           </a>
       </div>
@@ -23,9 +23,12 @@
     <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
       <div class="comment">
         <span> <h3> {{ this.pictures[$route.params.id].comment }}</h3></span>
+        <span><p>{{ this.pictures[$route.params.id].author }}</p></span>
       </div>
       <div class="description">
         <span>{{ this.pictures[$route.params.id].description }}</span>
+        <span><h5>Comments</h5></span>
+        <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui magnam dolore distinctio, corporis nam earum quisquam at possimus exercitationem libero culpa necessitatibus deserunt ut minima reiciendis similique eaque iure deleniti?</p></span>
       </div>
 
     </div>
@@ -52,7 +55,8 @@ export default {
     width:100%;
     border-radius: 10px;
     /* box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.13); */
-        box-shadow: 0 20px 64px 0 rgba(0,0,0,.2);
+    box-shadow: 0 20px 64px 0 rgba(0,0,0,.2);
+    margin-top: 35px;
   }
   .info {
     text-align: right;
@@ -65,12 +69,31 @@ export default {
     color: #fff;
   }
   .comment h3 {
+    display: inline-block;
     margin: 0px 0px 15px 0px;
     color: #fff;
   }
+
+  .comment p {
+    right: 25px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 9px;
+    font-size: 12px;
+    font-style: italic;
+  } 
+
   .actions {
     text-align: center;
+    position: fixed;
+    margin-top: 5px;
   }
+
+  .actions > a > i {
+    font-size: 30px;
+    margin-left: 5px;
+  }
+
   .description {
     font-size: 13px;
     opacity: 0.8;

@@ -1,4 +1,5 @@
 <template>
+<div>
   	<nav class="topNav">
     <div class="searchBox">
 
@@ -8,6 +9,13 @@
           </i> -->
     </div>
 	</nav>
+  <div class="mdl-grid">
+    Not yet available - Need to create view (Profile)
+  </div>
+  </div>
+
+
+
 </template>
 
 <script>
@@ -16,8 +24,8 @@ export default {
 </script>
 
 <style scoped>
-  .waiting {
-    padding: 10px;
-    color: #555;
+.mdl-grid {
+    /* margin-bottom: 55px; */
+    margin-top: 100px;
   }
 </style>

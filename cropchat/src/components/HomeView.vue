@@ -1,9 +1,8 @@
 <template>
   <div>
     <div class="mdl-grid page-anim">
-      <div class="mdl-cell mdl-cell--3-col mdl-cell mdl-cell--1-col-tablet mdl-cell--hide-phone"></div>
-      <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
-        <div v-for="picture in this.pictures" class="image-card" @click="displayDetails(picture.id)">
+      <div v-for="picture in this.pictures" class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
+        <div class="image-card" @click="displayDetails(picture.id)">
           <div class="image-card__picture">
             <img :src="picture.url" />
           </div>
@@ -25,13 +24,12 @@
     margin-top: 30px;
   }
 
-  .image-card:last-child {
+  .mdl-cell:last-child {
     margin-bottom: 75px;
   }
 
   .image-card {
     position: relative;
-    margin-bottom: 20px;
   }
   .image-card__picture > img {
     width:100%;
