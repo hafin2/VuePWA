@@ -16,11 +16,8 @@
       <div class="picture">
         <img :src="this.pictures[$route.params.id].url" />
       </div>
-      <div class="info">
-        <!-- <span>{{ this.pictures[$route.params.id].info }}</span> -->
-      </div>
     </div>
-    <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet info">
       <div class="comment">
         <span> <h3> {{ this.pictures[$route.params.id].comment }}</h3></span>
         <span><p>{{ this.pictures[$route.params.id].author }}</p></span>
@@ -58,11 +55,8 @@ export default {
     box-shadow: 0 20px 64px 0 rgba(0,0,0,.2);
     margin-top: 35px;
   }
-  .info {
-    text-align: right;
-    padding: 5px;
-    color: #fff;
-    font-size: 10px;
+  .info:last-child {
+    margin-bottom: 75px;
   }
   .comment {
     padding: 0px;
