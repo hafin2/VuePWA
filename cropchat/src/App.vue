@@ -40,6 +40,7 @@
           <i class="material-icons">
           home
           </i>
+          <div class="dot"></div>
         </router-link>
       </li>
       <li>
@@ -60,6 +61,7 @@
           <i class="material-icons">
           search
           </i>
+          <div class="dot"></div>
         </router-link>
       </li>
       <li>
@@ -67,6 +69,7 @@
           <i class="material-icons">
           perm_identity
           </i>
+          <div class="dot"></div>
         </router-link>
       </li>
     </ul>
@@ -133,6 +136,15 @@ nav li {
   
 }
 
+li a.router-link-exact-active .dot {
+  height: 5px;
+  width: 5px;
+  background-color: #328fb3;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
 ul {
   padding-left: 0px;
   display: flex;
@@ -142,29 +154,4 @@ ul {
 .material-icons {
   color: #c5c5c5 !important;
 }
-
-
-searchBox {
-  padding-left: 0px;
-  display: flex;
-  justify-content: center;
-}
-
-.searchTop {
-  margin-top: 45px;
-  margin-left: 8px;
-  margin-right: 8px;
-  height: 30px;
-  width: 88%;
-  background-color: rgba(189,189,189, 0.87);
-  color: #bdbdbd;
-  border: 0;
-  border-radius: 5px;
-  font-size: 1em;
-  /* box-shadow: 0 20px 64px 0 rgba(0,0,0,.2); */
-  
-}
-
-
-
 </style>

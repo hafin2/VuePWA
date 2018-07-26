@@ -1,7 +1,7 @@
 
 {
-  "name": "cropchat",
-  "short_name": "cropchat",
+  "name": "Image App",
+  "short_name": "Image App",
   "icons": [
     {
       "src": "/static/img/icons/apple-touch-icon-76x76.png",
@@ -28,5 +28,5 @@
   "display": "fullscreen",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#2196f3"
+  "theme_color": "#2d2d2d"
 }

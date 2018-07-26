@@ -21,7 +21,7 @@
 
   <div item-selector=".item" class="mdl-grid page-anim">
       <!-- <div class="mdl-cell mdl-cell--3-col mdl-cell mdl-cell--1-col-tablet mdl-cell--hide-phone"></div> -->
-      <div origin-left="false" v-for="picture in this.pictures" class="item mdl-cell mdl-cell--2-col-phone">
+      <div origin-left="false" v-for="picture in this.pictures" class="item mdl-cell mdl-cell--2-col mdl-cell--2-col-phone">
         <div  class="image-card" @click="displayDetails(picture.id)">
           <div class="image-card__picture">
             <img :src="picture.url" />

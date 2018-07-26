@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mdl-grid page-anim">
-      <div v-for="picture in this.pictures" class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone">
+      <div v-for="picture in this.pictures" class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone">
         <div class="image-card" @click="displayDetails(picture.id)">
           <div class="image-card__picture">
             <img :src="picture.url" />

@@ -28,4 +28,25 @@ export default {
     /* margin-bottom: 55px; */
     margin-top: 100px;
   }
+
+searchBox {
+  padding-left: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.searchTop {
+  margin-top: 45px;
+  margin-left: 8px;
+  margin-right: 8px;
+  height: 30px;
+  width: 88%;
+  background-color: rgba(189,189,189, 0.87);
+  color: #bdbdbd;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1em;
+  /* box-shadow: 0 20px 64px 0 rgba(0,0,0,.2); */
+  
+}
 </style>

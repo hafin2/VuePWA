@@ -53,7 +53,7 @@ export default {
     border-radius: 10px;
     /* box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.13); */
     box-shadow: 0 20px 64px 0 rgba(0,0,0,.2);
-    margin-top: 35px;
+    margin-top: 48px;
   }
   .info:last-child {
     margin-bottom: 75px;
@@ -84,8 +84,9 @@ export default {
   }
 
   .actions > a > i {
-    font-size: 30px;
-    margin-left: 5px;
+    font-size: 34px;
+    margin-left: 12px;
+    margin-top: 5px;
   }
 
   .description {
